@@ -1,0 +1,13 @@
+<h3>Here are all of the Cars by @Model["player"].GetPlayerName()</h3>
+<ol>
+  @foreach (var car in @Model["Cars"])
+  {
+    <li>@car.GetName()</li>
+  }
+</ol>
+<p>
+  <a href='/player/@Model["player"].GetId()/car/new'>Add a new Car</a>
+</p>
+<p>
+  <a href="/">Return to Main Page</a>
+</p>

@@ -1,0 +1,7 @@
+<h1>Add a new car to @Model["player"].GetPlayerName()</h1>
+<form action='/cars' method="post">
+  <input id="player-id" type="hidden" name="player-id" value='@Model["player"].GetId()'>
+  <label for="car-name">Enter a car</label>
+  <input type="car-name" name="car-name" type="text">
+  <button type="submit">Add car</button>
+</form>

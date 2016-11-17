@@ -1,0 +1,14 @@
+<h1>Here are your Players!</h1>
+<form action="/searchPlayer" method="post">
+  <label for="searchName">Enter a player's name:</label>
+  <input type="text" name="searchName" id="searchName">
+  <button type="submit">Search</button>
+</form>
+<ul>
+  @foreach (var player in Model)
+  {
+    <li><a href="/players/@player.GetId()">@player.GetPlayerName()</a></li>
+  }
+</ul>
+<a href="/player/new">Add a Player</a>
+<a href="/">Home</a>
